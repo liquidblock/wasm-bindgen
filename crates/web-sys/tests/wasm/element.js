@@ -156,3 +156,7 @@ export function new_xpath_result() {
     let xpathResult = xmlDoc.evaluate("/root//value", xmlDoc, null, XPathResult.ANY_TYPE, null);
     return xpathResult;
 }
+
+export function new_svg() {
+    return document.createElementNS("http://www.w3.org/2000/svg", "svg");
+}
